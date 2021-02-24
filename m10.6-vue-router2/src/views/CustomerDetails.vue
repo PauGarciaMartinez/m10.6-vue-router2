@@ -1,7 +1,7 @@
 <!-- TEMPLATE -->
 <template>
   <h1>Customer Details</h1>
-  <p>The customer name is <strong>{{ $route.params.name }}</strong></p>
+  <p>The customer name is <strong>{{ this.$route.params.name }}</strong></p>
 </template>
 
 <!-- TEMPLATE -->

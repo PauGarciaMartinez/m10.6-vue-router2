@@ -6,9 +6,7 @@
     <div class="customers-container" v-for="customer in customersList" :key="customer.id">
       <p class="customer-name">{{ customer.name }}</p>
       <p class="customer-description">{{ customer.description }}</p>
-      <router-link :to="{ name: 'CustomerDetails', params: { name: customer.name }}" class="router-link">
-        <button class="customer-btn">More</button>
-      </router-link>
+      <button @click="goCustomerDetails(customer.name)" class="customer-btn">More</button>
     </div>
   </div>
 
